@@ -1,0 +1,36 @@
+Jag jobbad med i Projekt grupp 2 med Erik Bernersson 
+
+
+Den ut ökningen jag har gjort är 
+
+Lakt till en tredje spelare
+
+Ormen har Lila färg 
+Kontrol för ormen är  T,F,G,H
+
+
+Lagt till frukten SpecialMushroom 
+
+Frukten gör att en 
+en spelkontroll blir slumpvald under 10 sekunder 
+för en slumpvald orm. (Svart frukt/prick i spelet)
+
+I Ormklassen har det utökas med
+int SpecialMushroomTimer ->En "timmer" när de äts special frukt
+Metoden: GetRandomDirection() ->Ta fram slump utvall av ormens rikting
+
+metoden i ormklassen 
+ public void EatFood(int score, int GrowBody)
+har fått värde 5 för special frukten, som slumpar fram en av ormarna i listan som kommer få en slumpad kontroll i 10 sekunder
+
+I GameEngine klassen:
+i tick metoden: kollar om någon har ätit special frukten och de som har efekt av den frukten får sitt värde av på SpecialMushroomTimer redcuserad.
+
+I mainform klassen: 
+Lakt till en knapp för kunna välja tre seplare samt en Player 3 Score
+
+Samt en jämföresl vilken orm som har fått högst poäng när de är tre ormar 
+
+
+Extra:
+La till också så ormanra blir randiga; svart/sinfärg/svart/sinfärg...
